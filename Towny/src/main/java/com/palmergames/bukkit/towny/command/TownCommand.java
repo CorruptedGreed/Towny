@@ -2512,7 +2512,7 @@ public class TownCommand extends BaseCommand implements CommandExecutor {
 			return;
 		}
 
-		// Fire a cancellable event that allows allows plugins to alter the price of a town.
+		// Fire a cancellable event that allows plugins to alter the price of a town.
 		PreNewTownEvent pnte = new PreNewTownEvent(player, name, spawnLocation, TownySettings.getNewTownPrice());
 		BukkitTools.ifCancelledThenThrow(pnte);
 
